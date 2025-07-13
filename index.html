@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ビットコイン売買判定サイト</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>ビットコイン売買判定サイト</h1>
+
+  <div>
+    <p>現在のビットコイン価格（JPY）：<span id="btc-price">読み込み中...</span></p>
+    <label for="buy-price">あなたの購入価格（円）:</label>
+    <input type="number" id="buy-price" />
+    <button onclick="judge()">判定する</button>
+    <p id="result"></p>
+  </div>
+
+  <canvas id="btcChart" width="300" height="150"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
